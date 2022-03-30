@@ -52,7 +52,7 @@ const js = () => gulp.src(routes.js.src).pipe(bro({
 })).pipe(gulp.dest(routes.js.dest));
 
 const ghDeploy = () => gulp.src('build/**/*').pipe(ghPages({
-  remoteUrl: 'git@github.com:AlexKuryanov/supergulp.git'
+  remoteUrl: 'https://github.com/AlexKuryanov/supergulp.git'
 }));
 
 const watchChanges = () => {
